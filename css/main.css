@@ -1,0 +1,587 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, Roboto, BlinkMacSystemFont, 'Segoe UI' , Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+/*Inicio de TOPBAR*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/ 
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/ 
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/ 
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/ 
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/ 
+
+body .topBar {
+    position: fixed;
+    top: 0;
+    display: flex;
+    width: 100%;
+    height: 12%;
+    background: #000000;
+    border-bottom: 1px solid rgba(255, 255, 255);
+    align-items: center;
+    padding-bottom: 1px;
+    box-shadow: 10px 0 20px rgb(rgb(2, 2, 2, 0.8));
+    z-index: 0;
+  }
+
+.contenedorlogo{
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.topBar .iconPinterest{
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.topBar .inicio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 60px;
+    height: 45px;
+    background: black;
+    color: white;    
+    margin-left: 30px; 
+    padding: 0 0 5px 0;  
+    border-radius: 35px;    
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+
+.topBar .hoy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 65px;
+    height: 45px;
+    color: white;
+    margin-left: 10px; 
+    background: white;
+    color: black;
+    padding: 0 0 5px 0;  
+    border-radius: 35px;
+    cursor: pointer;
+}
+
+.topBar .siguiendo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 90px;
+    height: 45px;
+    color: white;
+    margin-left: 10px;
+    background: white;
+    color: black;   
+    padding: 0 0 5px 0;  
+    border-radius: 35px;
+    cursor: pointer;
+}
+
+.topBar .buscar{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    text-align: left;
+    width: 60%;
+    height: 45px;
+    color: white;
+    margin-left: 10px;
+    background: white;
+    color: black;   
+    padding: 0 0 5px 20px;  
+    border-radius: 35px;
+    cursor: pointer;
+    
+}
+
+.contenedorBell{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     height: 45px;
+    width: 45px;
+    border-radius: 30px;
+    margin-left: 10px; 
+    cursor: pointer;
+}
+
+.contenedorChat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     height: 45px;
+    width: 45px;
+    border-radius: 30px;
+    margin-left: 10px; 
+    cursor: pointer;
+}
+
+.topBar .inicio:hover{
+    background: #e1e1e1;
+}
+
+.topBar .hoy:hover{
+    background: #e1e1e1;
+}
+
+.topBar .siguiendo:hover{
+    background: #e1e1e1;
+}
+
+.topBar .buscar:hover{
+    background: #e1e1e1;
+}
+
+.topBar .contenedorBell:hover{
+    background: #e1e1e1;
+}
+
+.topBar .contenedorChat:hover{
+    background: #e1e1e1;
+}
+
+.fa-bell{
+    color: white;
+}
+
+.fa-comment-dots{
+    color: white;
+}
+/*Inicio de imagenes*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/ 
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/ 
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/ 
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/ 
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+
+body .imagenes{
+    
+    display: grid; 
+    padding-top: 7%;
+    grid-template-columns: repeat(auto-fill,235px);
+    grid-gap: 4px;
+    justify-content: center;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.capa_1{
+    grid-row-end: span 3;
+}
+.capa_2{
+    grid-row-end: span 2;
+}
+.capa_3{
+    grid-row-end: span 1;
+}
+
+body .imagenes img{  
+    max-width: 100%; 
+    border-radius: 15px;
+    border: 1px solid black;  
+}
+
+body .imagenes .contenedorPost{
+    display: flex;
+    flex-flow: row;
+}
+
+body .imagenes .contenedorPost .name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 15px 15px; 
+    cursor: pointer;
+    height: 40px;
+    width: 70%;
+}
+
+body .imagenes .contenedorPost .icon{
+    cursor: pointer;
+    height: 40px;
+    width: 30%;
+}
+
+body .imagenes .contenedorPost .name:hover{
+    background: #e1e1e1;   
+}
+
+body .imagenes .contenedorPost .icon:hover{
+    background: #e1e1e1;   
+}
+
+/*Inicio de Detail*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/ 
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/ 
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/ 
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/ 
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/
+
+body .detail {
+    display: flex;
+    margin-left: 15%;
+    margin-top: 90px;
+    margin-bottom: 2%;
+    width: 70vw;
+    /* bottom: 100vh; */
+    height: 100vh;
+    background: white;
+    transition: top 0.3s ease;
+    border-radius: 60px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  }
+
+  body .detail .contenedorInteracciones {
+    display: flex;
+    flex-flow: row;
+
+    }
+
+  body .detail .contenedorInteracciones .contenedorBack{
+    display: flex;
+    position: fixed;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 300px;
+    width: 45px;
+    height: 45px;
+    margin-left: 30px;
+    margin-top: 10px;
+  }
+
+  /* body .detail .contenedorInteracciones .guardar{
+      position: static;
+      display: flex;      
+      align-items: center;
+      justify-content: center;
+      width: 75px;
+      height: 40px;
+      border-radius: 10px;
+      background: red;
+      color: white;
+      margin-left: 61%;
+      margin-top: 1%;
+  } */
+
+  body .detail .contenedorTodo{  
+    display: flex;  
+    flex-flow: row;
+    width: 100%;
+    max-height: 100%;
+    }
+
+  body .detail .contenedorimgD{
+    width: 100%;
+    padding: 20px;
+    /* height: 90%; */
+  } 
+
+  body .detail .contenedorTodo .contenedorimgD .imgDet{
+    width: auto;
+    height: auto;
+    border-radius: 60px;
+    border: 1px solid black;
+    margin-left: 20%;
+    }
+
+
+  body .detail .contenedorTodo .contenedorDesc{
+      width: 100%;
+      max-height: 100%;
+  }
+
+  
+  body .contenedorTodo .contenedorDesc .tools{
+    display: flex;
+    flex-flow: row;
+    }
+
+    body .detail .contenedorTodo .contenedorDesc .tools .contenedorPuntos {
+        display: flex;
+        cursor: pointer;
+        border-radius: 300px;
+        width: 45px;
+        height: 45px;
+        margin-top: 10px;
+      }
+
+      
+  body .detail .contenedorTodo .contenedorDesc .tools  .contenedorPuntos .dots{
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 300px;
+    width: 45px;
+    height: 45px;
+    padding: 9px 9px;
+  }
+
+      body .detail .contenedorTodo .contenedorDesc .tools  .contenedorDownload{
+        display: flex;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        border-radius: 300px;
+        width: 45px;
+        height: 45px;
+        margin-top: 10px;
+      }
+
+      body .detail .contenedorTodo .contenedorDesc .tools  .contenedorDownload .download{
+        display: flex;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        width: 45px;
+        height: 45px;
+        padding: 8px 8px;
+      }
+
+
+    body .detail .contenedorTodo .contenedorDesc .nameDet{     
+        margin-bottom: 3%;
+        margin-left: 20px;
+        font-size: 25px;
+    } 
+
+    body .detail .contenedorTodo .contenedorDesc .descriptionDet {
+        width: 90%;
+        margin-left: 13px;
+    }
+
+  body .detail .contenedorTodo .contenedorDesc .tools .contenedorPuntos:hover {
+    background: #e1e1e1;
+  }
+
+  body .detail .contenedorTodo .contenedorDesc .tools  .contenedorDownload:hover{
+    background: #e1e1e1;
+  }
+
+  body .detail .contenedorInteracciones .contenedorBack:hover{
+    background: #e1e1e1;
+  }
+
+    body .detail.open {
+        top: 6vw;
+    }
+
+
+body .imagenes.close{
+    display: none;
+}
+
+body .detail button {
+    display: flex;
+  }
+
+ /*Inicio de media query*/ 
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/ 
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/ 
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/ 
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/ 
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/   
+
+
+  @media (max-width: 667px) {
+
+    body .topBar{   
+        height: 80px !important;
+    }
+
+    .topBar .inicio{
+        display: none;
+    }
+
+    .topBar .siguiendo{
+        display: none;
+    }
+
+    .topBar .hoy{
+        display: none;
+    }
+
+    .topBar .contenedorlogo{
+        margin-right: 10px;
+    }
+    
+    body .imagenes{
+        column-count: 2;
+        margin-top: 15% !important;
+    }
+
+    body .imagenes .icon{
+        
+        left: 75%;
+    }
+
+    body .detail.open{
+        margin-top: 25% !important;
+    }
+
+    body .detail .contenedorTodo{
+        display: flex !important;
+        flex-flow: column !important;
+    }
+
+    body .detail .contenedorTodo .contenedorimgD{
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    body .detail .contenedorTodo .contenedorimgD .imgDet{
+        width: auto !important;
+        max-height: 500px !important;
+        border-radius: 60px;
+        border: 1px solid black;
+        margin-left: 4% !important;
+    }
+
+    body .detail .contenedorTodo .contenedorDesc{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0px !important;
+        word-wrap: word-break;
+    }
+
+    body .detail .contenedorTodo .tools{
+        height: 45px;
+    }
+
+    body .detail .contenedorTodo .contenedorDesc .tools .contenedorPuntos{
+        margin-top: 0;
+    }
+
+    body .detail .contenedorTodo .contenedorDesc .tools .contenedorDownload{
+        margin-top: 0;
+    }
+
+    body .detail .contenedorDesc .nameDet{
+        margin-left: 80%;
+        text-align: center;
+        margin-bottom: 0!important;
+    }
+
+    body .detail .contenedorTodo .contenedorDesc .descriptionDet{
+        display: flex;
+        width: 80% !important;
+        font-size: 12px;
+    }
+
+  }
+ 
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/ 
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/ 
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/ 
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/ 
+/*-----------------------------------------------------------------------------------------------------------------------------------------*/  
+
+  @media (max-width: 1024px) {
+
+    body .topBar{
+        height: 10%;
+    }
+
+    .topBar .hoy{
+        display: none;
+    }
+
+    .topBar .inicio{
+        margin-left: 10px;
+    }
+    
+    .topBar .contenedorlogo{
+        margin-right: 10px;
+    }
+
+    body .imagenes{
+        margin-top: 8%;
+    }
+
+    body .imagenes .icon{        
+        left: 75%;
+    }
+
+    body  .detail.open{
+        margin-left: 2.5%;
+        margin-top: 15%;
+        width: 95vw;
+        height: 100vh;
+    }
+
+    body .detail .contenedorTodo{
+        display: flex;
+        flex-flow: column;
+    }
+
+    body .detail .contenedorTodo .contenedorimgD{
+        width: auto;
+        max-height: 860px;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    body .detail .contenedorTodo .contenedorimgD .imgDet{
+        width: 100%;
+        height: 100%;
+        border-radius: 60px;
+        border: 1px solid black;        
+        margin-left: 0;
+    }
+
+    body .detail .contenedorTodo .contenedorDesc{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0px !important;
+        word-wrap: word-break;
+    }
+
+    body .detail .contenedorTodo .tools .contenedorPuntos{
+        margin-top: 0;
+    }
+
+    body .detail .contenedorTodo .tools .contenedorDownload{
+        display: none;
+    }
+
+    body .detail .contenedorDesc .nameDet{
+        margin-left: 80%;
+        text-align: center;
+    }
+
+    body .detail .contenedorTodo .contenedorDesc .descriptionDet{
+        display: flex;
+        width: 80%;
+    }
+
+    
+  }
+
+
+  @media (min-width: 1025px){
+
+  }
