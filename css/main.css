@@ -29,6 +29,10 @@ body .topBar {
     z-index: 0;
   }
 
+.creeClaseJuan {
+    color: black;
+}
+
 .contenedorlogo{
     width: 48px;
     height: 48px;
